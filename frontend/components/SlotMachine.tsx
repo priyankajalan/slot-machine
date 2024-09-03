@@ -7,7 +7,7 @@ const SlotMachine: React.FC = () => {
   const [reel2, setReel2] = useState('L');
   const [reel3, setReel3] = useState('O');
   const [message, setMessage] = useState('');
-  const [credits, setCredits] = useState(10);
+  const [credits, setCredits] = useState(0);
   const [isSpinning, setIsSpinning] = useState(false);
   
 
