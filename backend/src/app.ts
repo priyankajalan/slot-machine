@@ -1,6 +1,5 @@
-import cors from 'cors'
 import express from 'express'
-import mongoose from 'mongoose';
+import cors from 'cors'
 
 import { rollMachine } from './controllers/slotMachine.controller'
 import { getUser } from './middlewares/user.middleware';
@@ -10,13 +9,6 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-// MongoDB Connection
-mongoose.connect('mongodb+srv://fileapp:test@cluster0.vj1opyu.mongodb.net/slot_machine')
-  .then(() => {
-    console.log('Connected to MongoDB');
-  }).catch((error) => {
-    console.error('MongoDB connection error:', error);
-});
 
 app.post(`/roll`, getUser, rollMachine)
 
