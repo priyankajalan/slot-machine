@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/SlotMachine.module.css';
 
-// const symbols = ['C', 'L', 'O', 'W'];
-
-// const getRandomSymbol = () => {
-//   const randomIndex = Math.floor(Math.random() * symbols.length);
-//   return symbols[randomIndex];
-// };
-
-// const checkWin = (reel1: string, reel2: string, reel3: string) => {
-//   return reel1 === reel2 && reel2 === reel3;
-// };
-
 const SlotMachine: React.FC = () => {
   const [username, setUsername] = useState('');
   const [reel1, setReel1] = useState('C');
