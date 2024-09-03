@@ -1,0 +1,32 @@
+.reel {
+  display: inline-block;
+  font-size: 6rem;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  margin: 30px 10px;
+  border: 2px solid #92841a;
+  background-color: #ecd945;
+}
+
+.spin {
+  animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.roll_btn{
+  font-size: 1.5rem; 
+  padding: 10px 20px;
+  background-color: rgb(78, 241, 78);
+  border: none;
+}
